@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,900");
+
+/* Common styles for all screen sizes */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins';
+}
+
+.calc-container {
+  border: 2px solid black;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #B2DAFF;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.Extra-info {
+  font-weight: 600;
+  font-size: 6vmin;
+  color: #0083fd;
+}
+
+.calc {
+  border-radius: 39px;
+  background-color: rgb(29, 28, 28);
+  border: none;
+  height: 40em;
+  width: 23em;
+  overflow: hidden;
+  box-shadow: 30px 30px 100px 2px #0083fd;
+}
+
+.display {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 0.5px solid grey;
+  height: 15rem;
+  color: white;
+}
+
+.display input {
+  display: flex;
+  background: transparent;
+  text-align: right;
+  height: 60%;
+  width: 98%;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.button-section {
+  height: calc(100% - 50px);
+  padding: 10px;
+  text-align: right;
+  display: flex;
+}
+
+.numeric-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.numeric-btn .n-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.numeric-btn button {
+  height: 1.5em;
+  font-weight: 500;
+  font-size: 32px;
+  background-color: rgba(59, 57, 57, 0.952);
+  color: #b2daff;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.light #calc{
+  border-radius: 39px;
+  background-color: #F1EEDC;
+  border: none;
+  height: 40rem;
+  width: 23rem;
+  overflow: hidden;
+  box-shadow: 30px 30px 100px 2px #024482;
+  color: black;
+  
+}
+.light #calc input{
+  color: black;
+}
+.light #calc .numeric-btn button{
+  background-color: #B3C8CF;
+  color:black;
+
+}
+.dark #calc{
+
+  border-radius: 39px;
+  background-color: rgb(29, 28, 28);
+  border: none;
+  height: 40rem;
+  width: 23rem;
+  overflow: hidden;
+  box-shadow: 30px 30px 100px 2px #0083fd;
+}
+@media (maxwidth:550px) {
+  .Extra-info {
+    position: absolute;
+    top:0;
+    font-size: 5vmin;
+  }
+  .calc {
+    
+    height: 39em;
+    width: 19em;
+
+  }
+  
+
+}
